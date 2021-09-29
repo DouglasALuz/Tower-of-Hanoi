@@ -18,14 +18,19 @@ box3.setAttribute('class', 'torre')
 
 let p1 = boxCreator()
 p1.setAttribute('class', 'peça1')
+p1.setAttribute('Id', '1')
 let p2 = boxCreator()
 p2.setAttribute('class', 'peça2')
+p2.setAttribute('Id', '2')
 let p3 = boxCreator()
 p3.setAttribute('class', 'peça3')
+p3.setAttribute('Id', '3')
 let p4 = boxCreator()
 p4.setAttribute('class', 'peça4')
+p4.setAttribute('Id', '4')
 let p5 = boxCreator()
 p5.setAttribute('class', 'peça5')
+p5.setAttribute('Id', '5')
 
 box1.appendChild(p1)
 box1.appendChild(p2)
@@ -39,9 +44,21 @@ let torre = document.querySelector('.torre') //!!!!! Tive problema para selecion
 torre.addEventListener('click', pieceChoice)
 
 function pieceChoice(evt){
-  console.log(evt.target.classname)
+  console.log(evt.currentTarget)
 
 }
+
+let disco1 = document.getElementById('1')
+let disco2 = document.getElementById('2')
+let disco3 = document.getElementById('3')
+let disco4 = document.getElementById('4')
+let disco5 = document.getElementById('5')
+
+disco1.addEventListener('click', pieceChoice)
+disco2.addEventListener('click', pieceChoice)
+disco3.addEventListener('click', pieceChoice)
+disco4.addEventListener('click', pieceChoice)
+disco5.addEventListener('click', pieceChoice)
 
 // Função para criar as peças
 // let N = 3 // defini inicialmente 3 peças, mas a ideia é gerar "N" peças
