@@ -41,7 +41,7 @@ box1.appendChild(p3)
 box1.appendChild(p4)
 box1.appendChild(p5)
 
-//Seleciona
+//Seleciona cada torre
 let torres = document.querySelectorAll('#base') 
 
 torres.forEach(function(torre){
