@@ -16,7 +16,7 @@ div {
 }
 
 #disco1 {
-  width: 90%;
+  width: 50%;
   height: 10%;
   border: 1px solid black;
   background-color: black;
@@ -24,7 +24,7 @@ div {
 }
 
 #disco2 {
-  width: 70%;
+  width: 30%;
   height: 10%;
   border: 1px solid gray;
   background-color: gray;
@@ -32,25 +32,9 @@ div {
 }
 
 #disco3 {
-  width: 50%;
+  width: 10%;
   height: 10%;
   border: 1px solid blue;
   background-color: blue;
-  border-radius: 15%;
-}
-
-#disco4 {
-  width: 30%;
-  height: 10%;
-  border: 1px solid green;
-  background-color: green;
-  border-radius: 15%;
-}
-
-#disco5 {
-  width: 10%;
-  height: 10%;
-  border: 1px solid yellow;
-  background-color: yellow;
   border-radius: 15%;
 }
