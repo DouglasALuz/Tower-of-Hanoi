@@ -5,11 +5,14 @@ let bod = document.getElementById('main')
 
 // Cria cada uma das 3 áreas de movimentação da torre
 let box1 = boxCreator()
-box1.setAttribute('class', 'torre')
+      box1.setAttribute('class', 'torre1')
+        box1.setAttribute('Id', 'base')
 let box2 = boxCreator()
-box2.setAttribute('class', 'torre')
+      box2.setAttribute('class', 'torre2')
+        box2.setAttribute('Id', 'base')
 let box3 = boxCreator()
-box3.setAttribute('class', 'torre')
+      box3.setAttribute('class', 'torre3')
+        box3.setAttribute('Id', 'base')
 
 
     bod.appendChild(box1)
@@ -38,10 +41,12 @@ box1.appendChild(p3)
 box1.appendChild(p4)
 box1.appendChild(p5)
 
-// Função para mover peça
-// let torre = document.querySelector('.torre') //!!!!! Tive problema para selecionar as peças nos outros boxes
+//Seleciona
+let torres = document.querySelectorAll('#base') 
 
-// torre.addEventListener('click', pieceChoice)
+torres.forEach(function(torre){
+  torre.addEventListener('click', pieceChoice)
+})
 
 function pieceChoice(evt){
   console.log(evt.currentTarget)
