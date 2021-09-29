@@ -15,7 +15,7 @@ div {
   align-items: center;
 }
 
-.peça1 {
+#disco1 {
   width: 90%;
   height: 10%;
   border: 1px solid black;
@@ -23,7 +23,7 @@ div {
   border-radius: 15%;
 }
 
-.peça2 {
+#disco2 {
   width: 70%;
   height: 10%;
   border: 1px solid gray;
@@ -31,7 +31,7 @@ div {
   border-radius: 15%;
 }
 
-.peça3 {
+#disco3 {
   width: 50%;
   height: 10%;
   border: 1px solid blue;
@@ -39,7 +39,7 @@ div {
   border-radius: 15%;
 }
 
-.peça4 {
+#disco4 {
   width: 30%;
   height: 10%;
   border: 1px solid green;
@@ -47,7 +47,7 @@ div {
   border-radius: 15%;
 }
 
-.peça5 {
+#disco5 {
   width: 10%;
   height: 10%;
   border: 1px solid yellow;
