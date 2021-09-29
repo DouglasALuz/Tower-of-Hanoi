@@ -1,0 +1,54 @@
+body {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+div {
+  width: 25vw;
+  height: 20vh;
+  border: 2px dashed black;
+  float: left;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+}
+
+.peça1 {
+  width: 90%;
+  height: 10%;
+  border: 1px solid black;
+  background-color: black;
+  border-radius: 15%;
+}
+
+.peça2 {
+  width: 70%;
+  height: 10%;
+  border: 1px solid gray;
+  background-color: gray;
+  border-radius: 15%;
+}
+
+.peça3 {
+  width: 50%;
+  height: 10%;
+  border: 1px solid blue;
+  background-color: blue;
+  border-radius: 15%;
+}
+
+.peça4 {
+  width: 30%;
+  height: 10%;
+  border: 1px solid green;
+  background-color: green;
+  border-radius: 15%;
+}
+
+.peça5 {
+  width: 10%;
+  height: 10%;
+  border: 1px solid yellow;
+  background-color: yellow;
+  border-radius: 15%;
+}
