@@ -17,20 +17,20 @@ box3.setAttribute('class', 'torre')
     bod.appendChild(box3)
 
 let p1 = boxCreator()
-p1.setAttribute('class', 'peça1')
-p1.setAttribute('Id', '1')
+      p1.setAttribute('class', 'peça1')
+        p1.setAttribute('Id', 'disc')
 let p2 = boxCreator()
-p2.setAttribute('class', 'peça2')
-p2.setAttribute('Id', '2')
+      p2.setAttribute('class', 'peça2')
+        p2.setAttribute('Id', 'disc')
 let p3 = boxCreator()
-p3.setAttribute('class', 'peça3')
-p3.setAttribute('Id', '3')
+      p3.setAttribute('class', 'peça3')
+        p3.setAttribute('Id', 'disc')
 let p4 = boxCreator()
-p4.setAttribute('class', 'peça4')
-p4.setAttribute('Id', '4')
+      p4.setAttribute('class', 'peça4')
+        p4.setAttribute('Id', 'disc')
 let p5 = boxCreator()
-p5.setAttribute('class', 'peça5')
-p5.setAttribute('Id', '5')
+      p5.setAttribute('class', 'peça5')
+        p5.setAttribute('Id', 'disc')
 
 box1.appendChild(p1)
 box1.appendChild(p2)
@@ -39,26 +39,22 @@ box1.appendChild(p4)
 box1.appendChild(p5)
 
 // Função para mover peça
-let torre = document.querySelector('.torre') //!!!!! Tive problema para selecionar as peças nos outros boxes
+// let torre = document.querySelector('.torre') //!!!!! Tive problema para selecionar as peças nos outros boxes
 
-torre.addEventListener('click', pieceChoice)
+// torre.addEventListener('click', pieceChoice)
 
 function pieceChoice(evt){
   console.log(evt.currentTarget)
 
 }
 
-let disco1 = document.getElementById('1')
-let disco2 = document.getElementById('2')
-let disco3 = document.getElementById('3')
-let disco4 = document.getElementById('4')
-let disco5 = document.getElementById('5')
+//Seleciona cada disco pela id
+const discos = document.querySelectorAll('#disc')
 
-disco1.addEventListener('click', pieceChoice)
-disco2.addEventListener('click', pieceChoice)
-disco3.addEventListener('click', pieceChoice)
-disco4.addEventListener('click', pieceChoice)
-disco5.addEventListener('click', pieceChoice)
+discos.forEach(function(disco){
+  disco.addEventListener('click', pieceChoice)  
+})
+
 
 // Função para criar as peças
 // let N = 3 // defini inicialmente 3 peças, mas a ideia é gerar "N" peças
