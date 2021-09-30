@@ -35,19 +35,36 @@ box1.appendChild(p3);
 let torres = document.querySelectorAll('.torre') ;
 
 torres.forEach(function(torre){
-  torre.addEventListener('click', pieceChoice);
+  torre.addEventListener('click', moveDisc);
 })
 
-function pieceChoice(evt){
- console.log(evt.currentTarget);
+
+
+// Troca disco de Torre
+let d1 = null
+let clic = true
+function moveDisc(evt){
+  const torre = evt.currentTarget
+   
+  if(clic){
+    const disc = torre.lastChild
+    d1 = disc
+    clic = false
+  }else{
+    torre.appendChild(d1)
+    clic = true
+   }
+  
+  
+  
+  //console.log(evt.srcElement.childNodes.length)
+  // if(Element.classname === 'disco'){
+  //   //disc = document.getElementById(evt.target.id)
+  // }
 }
 
-//Seleciona cada disco pela id
-const discos = document.querySelectorAll('.disco');
 
-discos.forEach(function(disco){
-  disco.addEventListener('click', pieceChoice);
-});
+
 
 // Função para criar divs dinamicamente
 
