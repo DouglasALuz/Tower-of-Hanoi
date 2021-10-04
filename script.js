@@ -57,11 +57,12 @@ function moveDisc(evt){
   
   
   
-  //console.log(evt.srcElement.childNodes.length)
-  // if(Element.classname === 'disco'){
-  //   //disc = document.getElementById(evt.target.id)
-  // }
 }
+ 
+//console.log(evt.srcElement.childNodes.length)
+// if(Element.classname === 'disco'){
+//   //disc = document.getElementById(evt.target.id)
+// }
 
 
 
