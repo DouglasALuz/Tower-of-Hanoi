@@ -38,34 +38,49 @@ torres.forEach(function(torre){
   torre.addEventListener('click', moveDisc);
 })
 
-
+const t3 = document.getElementById('torre3')
+console.log(t3)
+//Adiciona contador
+let count = 0
+let contador = boxCreator()
+      contador.setAttribute('Id', 'Cont')
+bod.appendChild(contador)
 
 // Troca disco de Torre
 let d1 = null
 let clic = true
 function moveDisc(evt){
   const torre = evt.currentTarget
-   
-  if(clic){
+  console.log(evt) 
+  
+  if(clic && torre.lastChild !== null){
     const disc = torre.lastChild
+    console.log(torre.clientWidth)
+    console.log(count)
     d1 = disc
     clic = false
-  }else{
-    torre.appendChild(d1)
-    clic = true
+  }else if(clic === false){
+            if(torre.lastElementChild === null || d1.clientWidth <= torre.lastChild.clientWidth){
+              count = count + 1
+              torre.appendChild(d1)
+              contador.innerText = count
+            }
+        clic = true
+   } 
+   if(t3.childNodes.length === 3){
+     win()
    }
-  
-  
-  
 }
  
-//console.log(evt.srcElement.childNodes.length)
-// if(Element.classname === 'disco'){
-//   //disc = document.getElementById(evt.target.id)
-// }
 
 
-
+//Função venceu
+function win() {
+  const winner = boxCreator()
+          winner.setAttribute('class','winner')
+  winner.innerText = 'Parabéns, você venceu!'
+  bod.appendChild(winner)
+}
 
 // Função para criar divs dinamicamente
 
